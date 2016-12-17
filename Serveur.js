@@ -3,7 +3,7 @@
  */
 
 var express = require('express');
-var route = require('routeIndex');
+var route = require('./routeIndex');
 
 var app = express();
 app.use('/', route);

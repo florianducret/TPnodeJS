@@ -36,13 +36,13 @@ module.exports.getContactById = function(id, callback){
     contactModel.find({_id : id}, callback);
 }
 
-module.exports.addContact = function (firstName, lastName, telNumber, callback){
+module.exports.addContact = function (firstName, lastName, telNumber){
     var contact = new contactModel({
         "firstName" : firstName,
         "lastName" : lastName,
         "telNumber" : telNumber
     })
-    contact.save(callback);
+    contact.save();
 }
 
 module.exports.deleteContact = function (id, callback){
