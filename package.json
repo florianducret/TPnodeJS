@@ -1,0 +1,23 @@
+{
+  "name": "tp_node-webapi",
+  "description": "",
+  "version": "0.1.0",
+  "author": "DUCRET Florian",
+  "contributors": [],
+  "scripts": {
+    "code:jshint": "node_modules/jscs/bin/jshint lib/**.js test/**/**.js",
+    "code:style": "node_modules/jscs/bin/jscs *.js lib/*.js test/server/*.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "cors": "^2.8.1",
+    "express-domain-middleware": "^0.1.0",
+    "express-xml-bodyparser": "^0.3.0",
+    "mongoose": "^4.7.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
